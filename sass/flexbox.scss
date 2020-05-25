@@ -1,0 +1,105 @@
+.d-flex {
+  display: flex;
+}
+.d-inlineFlex {
+  display: inline-flex;
+}
+.d-column {
+  flex-direction: column;
+}
+.d-row {
+  flex-direction: row;
+}
+/* Passage a la ligne */
+.d-wrap {
+  flex-wrap: wrap;
+}
+/* Agrandissement selon l'espace vide */
+.d-grow1 {
+  flex-grow: 1;
+}
+.d-grow2 {
+  flex-grow: 2;
+}
+/* Facteur de retrecissement */
+.d-shrink2 {
+  flex-shrink: 2;
+}
+/* Alignement sur axe principal - justify-content */
+.d-jcStart {
+  justify-content: flex-start;
+}
+.d-jcCenter {
+  justify-content: center;
+}
+.d-jcEnd {
+  justify-content: flex-end;
+}
+.d-jcBetween {
+  justify-content: space-between;
+}
+.d-jcAround {
+  justify-content: space-around;
+}
+
+/* Alignement sur axe secondaire - align-items */
+.d-aiStart {
+  align-items: flex-start;
+}
+.d-aiEnd {
+  align-items: flex-end;
+}
+.d-aiCenter {
+  align-items: center;
+}
+.d-aibaseline {
+  align-items: baseline;
+}
+.d-aiStretch {
+  align-items: stretch;
+}
+
+/* Alignement sur axe secondaire individuellement - align-self */
+.d-asStart {
+  align-items: flex-start;
+}
+.d-asEnd {
+  align-items: flex-end;
+}
+.d-asCenter {
+  align-items: center;
+}
+.d-asbaseline {
+  align-items: baseline;
+}
+.d-asStretch {
+  align-items: stretch;
+}
+
+/* Gérer l’alignement des lignes selon l’axe secondaire - align-content */
+.d-acStart {
+  align-content: flex-start;
+}
+.d-acCenter {
+  align-content: center;
+}
+.d-acEnd {
+  align-content: flex-end;
+}
+.d-acBetween {
+  align-content: space-between;
+}
+.d-acAround {
+  align-content: space-around;
+}
+
+/* BORDER */
+.bdr-red {
+  border: solid 1px red;
+}
+.bdr-blue {
+  border: solid 1px blue;
+}
+.bdr-white {
+  border: solid 1px white;
+}

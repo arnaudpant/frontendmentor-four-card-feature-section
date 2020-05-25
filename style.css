@@ -1,0 +1,287 @@
+@charset "UTF-8";
+.d-flex {
+  display: flex;
+}
+
+.d-inlineFlex {
+  display: inline-flex;
+}
+
+.d-column {
+  flex-direction: column;
+}
+
+.d-row {
+  flex-direction: row;
+}
+
+/* Passage a la ligne */
+.d-wrap {
+  flex-wrap: wrap;
+}
+
+/* Agrandissement selon l'espace vide */
+.d-grow1 {
+  flex-grow: 1;
+}
+
+.d-grow2 {
+  flex-grow: 2;
+}
+
+/* Facteur de retrecissement */
+.d-shrink2 {
+  flex-shrink: 2;
+}
+
+/* Alignement sur axe principal - justify-content */
+.d-jcStart {
+  justify-content: flex-start;
+}
+
+.d-jcCenter {
+  justify-content: center;
+}
+
+.d-jcEnd {
+  justify-content: flex-end;
+}
+
+.d-jcBetween {
+  justify-content: space-between;
+}
+
+.d-jcAround {
+  justify-content: space-around;
+}
+
+/* Alignement sur axe secondaire - align-items */
+.d-aiStart {
+  align-items: flex-start;
+}
+
+.d-aiEnd {
+  align-items: flex-end;
+}
+
+.d-aiCenter {
+  align-items: center;
+}
+
+.d-aibaseline {
+  align-items: baseline;
+}
+
+.d-aiStretch {
+  align-items: stretch;
+}
+
+/* Alignement sur axe secondaire individuellement - align-self */
+.d-asStart {
+  align-items: flex-start;
+}
+
+.d-asEnd {
+  align-items: flex-end;
+}
+
+.d-asCenter {
+  align-items: center;
+}
+
+.d-asbaseline {
+  align-items: baseline;
+}
+
+.d-asStretch {
+  align-items: stretch;
+}
+
+/* Gérer l’alignement des lignes selon l’axe secondaire - align-content */
+.d-acStart {
+  align-content: flex-start;
+}
+
+.d-acCenter {
+  align-content: center;
+}
+
+.d-acEnd {
+  align-content: flex-end;
+}
+
+.d-acBetween {
+  align-content: space-between;
+}
+
+.d-acAround {
+  align-content: space-around;
+}
+
+/* BORDER */
+.bdr-red {
+  border: solid 1px red;
+}
+
+.bdr-blue {
+  border: solid 1px blue;
+}
+
+.bdr-white {
+  border: solid 1px white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fafafa;
+  font-size: 15px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container-card {
+  height: 590px;
+  width: 376px;
+  margin: 0 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container-card-left {
+  align-items: flex-end;
+}
+.container-card-left .card {
+  border-top: 4px solid #45d3d3;
+}
+.container-card-center {
+  align-items: center;
+}
+.container-card-center .card:nth-child(1) {
+  border-top: 4px solid #ea5353;
+}
+.container-card-center .card:nth-child(2) {
+  margin-top: 30px;
+  border-top: 4px solid #fcaf4a;
+}
+.container-card-right {
+  align-items: flex-start;
+}
+.container-card-right .card {
+  border-top: 4px solid #549ef2;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 350px;
+  border-radius: 5px;
+  box-shadow: 0 5px 20px rgba(163, 165, 174, 0.4);
+}
+.card__interior {
+  width: 290px;
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+}
+.card__interior .card__interior__h3 {
+  color: #4c4e61;
+  font-weight: 600;
+}
+.card__interior .card__interior__p {
+  color: #a3a5ae;
+  font-weight: 200;
+}
+.card__interior .card__interior__img {
+  display: flex;
+  height: 100%;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.card__interior .card__interior__img img {
+  width: 64px;
+  height: 64px;
+}
+
+footer {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1100px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-card {
+    height: auto;
+    width: 375px;
+    margin: 0;
+  }
+  .container-card-left {
+    align-items: center;
+  }
+  .container-card-center .card:nth-child(2) {
+    margin-top: 25px;
+  }
+  .container-card-right {
+    align-items: center;
+    margin-bottom: 78px;
+  }
+
+  .card {
+    height: 222px;
+    width: 310px;
+    margin-top: 25px;
+  }
+}
+header {
+  margin: 30px 0;
+  height: 222px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: center;
+  text-align: center;
+}
+header h1 {
+  color: #4c4e61;
+  font-weight: 200;
+}
+header h1 span {
+  font-weight: 600;
+}
+header p {
+  margin-left: auto;
+  margin-right: auto;
+  color: #a3a5ae;
+  max-width: 510px;
+}
+
+@media only screen and (max-width: 1100px) {
+  header {
+    margin: 87px 0 0 0;
+    height: 210px;
+    justify-content: flex-start;
+    padding: 0 40px;
+  }
+  header h1 {
+    font-size: 24px;
+  }
+  header p {
+    padding-top: 25px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
